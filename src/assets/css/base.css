@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import "./ionicons.css";
+body,
+main,
+nav,
+div,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,hr {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  font-size: 14px;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+  color: #333;
+  background: #f4f5f5;
+}
+a {
+  text-decoration: none;
+}
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+.white-bg {
+  background-color: #fff;
+}
+.white-clr {
+  color: #fff;
+}
+.primary {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+.badge {
+  position: relative
+}
+.badge:after {
+  content: attr(data-badge);
+  display: flex;
+  position: absolute;
+  top: -8px;
+  left: 90%;
+  padding: 0 6px;
+  height: 18px;
+  background-color: #ff4949;
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.badge.badge-left:after {
+  left: auto;
+  right: 100%;
+}
